@@ -3,11 +3,49 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>释结解绑互联网+💯</title>
+	<title>释结解绑🪢一别两宽👋🏻</title>
 </head>
 <body>
-	<a href="./index.html">首页</a>
+	<div style="width:100%;height:32px;float:left;">
+		<div id="back" style="width:41px;height:8px;float:left;">
+			[<]
+		</div>
+		<script>
+			var btn = document.getElementById("back");
+			btn.onclick = function (event) {
+				history.back();
+			}
+		</script>
+		<a href="./index.html">首页</a>
+	</div>
 	<hr />
-	<a href="./登录后.html">登录</a>
+	
+	<div style="float:left;width:100%;">
+		<div style="float:left;width=10%;">
+			<img src="logo.png" width="10%">
+		</div>
+		<div style="float:left;width=10%;">
+			<div>
+				<div style="width:100px;height:16px;float:left;">Username:</div>
+				<input type="text" name="user" id="user"><br />
+				<div style="width:100px;height:16px;float:left;">Password:</div>
+				<input type="password" name="password" id="password">
+			</div>
+			<div >
+				<input id="denglu" type="submit" name="submit" value="给爷登录" >
+			</div>
+		</div>
+	</div>
+
+	<hr />
+	<a href="./login.html">登录</a>
+	<script>
+		var btn = document.getElementById("denglu");
+		btn.onclick = function (event) {
+			alert("你好, "+document.getElementById("user").value);
+			window.location.href = './login.html?'+'user='+document.getElementById("user").value;
+			// location.assign("./login.html");
+		}
+	</script>
 </body>
 </html>
